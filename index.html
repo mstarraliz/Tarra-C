@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Tarra Cokor</title>
+		<link rel="stylesheet" type="text/css" href="./css2/tarra_cokor2.css">
+	</head>
+
+<!-- Body -->
+<body class="Background"> 
+
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#Slideshow">Slideshow</a>
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact Me!</a> <!--Click contact on nav bar and openForm runs-->
+	</div>	
+
+<!-- Home -->
+<div id="Home">
+	<br>
+	<br>
+		
+
+<!-- Video -->
+		<video autoplay muted loop id="Spinner_Video"> <!--Video play automatically, on a loop, no sound -->
+			<source src="./css2/Video2/tech.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:#FFFF40;">Tarra Cokor's Portfolio</h1>
+			<p> 
+				<strong>
+					<center>
+						
+						My name is Tarra Cokor. Welcome to my portfolio website. 
+				<br>I am a front end web developer. I have a diverse set of skills ranging from HTML, CSS &
+				JavaSript. I also have experience with the popular programming language Python.
+						<br>Thank you for stopping by and enjoy! 
+						<br>
+						<br>
+						<br>
+						<br>
+						
+	
+					</center>	
+				</strong>
+			</p> 
+	</div>
+
+	<!---Slideshow Section-->
+		<div id="Slideshow">
+			<div id="Slideshow_Background">
+				<div id="Slideshow_Container">
+
+					<div class="mySlides fade">
+						<div class="Slide_Number">1 / 4</div>
+							<img class="Slide_Show_Images" src="css2/MyImages/coder.jpg" style="width:100%">
+								<div class="text">I'd like to assist you on your project!</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="Slide_Number">2 / 4</div>
+							<img class="Slide_Show_Images" src="css2/MyImages/HTML_JS_CSS.jpg" style="width:100%">
+								<div class="text">I am a front end web developer, trained in:<br>HTML, CSS, JavaScript,</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="Slide_Number">3 / 4</div>
+							<img class="Slide_Show_Images" src="css2/MyImages/python.png" style="width:100%">
+								<div class="text">and the popular programming language Python</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="Slide_Number">4 / 4</div>
+							<img class="Slide_Show_Images" src="css2/MyImages/code.jpg" style="width:100%">
+								<div class="text"></div>
+
+								
+					</div>
+				</div>
+								<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="Next" onclick="plusSlides(1)">&#10095;</a>				
+			</div>
+			<br>
+					<div style="text-align:center">
+					
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				
+				</div>
+			</div>
+		</div>
+
+<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src="css2/MyImages/Development.jpg" alt="Laptop">
+		</div>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h1>About</h1>
+				<p><br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Front End Developer Boot Camp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, and Python. <br><br>I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+		</div>
+	</div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column --> 
+			<h1>GitHub</h1>
+				<p style="font-size: 22px;">You can view my coding projects on my GitHub profile here:<br>
+				<center><a href="https://github.com/mstarraliz" target="_blank">Tarra Cokor GitHub</a></center></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/the-tech-academy" target="_blank"><img src="css2/MyImages/GitHub.jpg" alt="GitHub"></a>
+		</div>
+	</div>
+</div>
+<!-- Contact section -->
+	<div id="Contact"> 
+		<button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+
+			<div class="form-popup" id="myForm">
+				<form action="https://formspree.io/info@tecokor@gmail.com" method="Post" class="form-container">
+				<!----Formspree free online service to send contact info to my email-->
+
+				<h1>Contact</h1>
+				<label for="name"><b>Name</b></label>
+					<input type="text" placeholder="Please enter your name here" name="name" required>
+				<label for="phone"><b>Phone Number</b></label>
+					<input type="text" placeholder="Please enter your phone number here" name="phone" required>
+				<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Please enter email here" name="email" required>
+				<label for="message"><b>Message</b></label>
+					<input type="text" placeholder="Please enter message here" name="message" required>		
+
+							<button type="submit" class="btn">Submit</button>
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				</form>		
+										
+			</div>
+	
+		<div>
+		
+	
+<!-- Footer section -->
+	<footer>
+		<p>
+			<center>&copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+		</p>
+	</footer>
+
+	<script src="./JS/tarrajs.js"></script>
+
+		</body>
+
+</html>
